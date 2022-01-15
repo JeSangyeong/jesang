@@ -263,14 +263,29 @@ div.menu{
 
 div.review{
     header{
-        .texts{}
+        .texts{
+            .btn{
+                margin-top: 40px;
+                button{
+                    width: 240px;
+                    height: 50px;
+                    border-radius: 25px;
+                }
+            }
+        }
         .imgView{
+            width: 50%;
+            margin-left: 50%;
+            margin-top: -160px;
             .imgGroup{
                 display: flex;
                 justify-content: space-between;
-                
+                width: 500%;
                 .image{
-                    
+                    width: calc(100% / 6 - 30px);
+                    height: 0;
+                    padding-top: calc(100% / 9 * 1);
+                    background-color: #ccc;
                 }
             }
         }
