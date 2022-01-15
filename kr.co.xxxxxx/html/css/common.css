@@ -69,6 +69,10 @@ div.content {
   padding: 160px 0;
 }
 
+div.content {
+  padding: 160px 0;
+}
+
 div.content section, div.content header {
   width: 90%;
   max-width: 1440px;
