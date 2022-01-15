@@ -1,0 +1,117 @@
+div.mnBanner {
+  background-color: #ccc;
+  padding: 350px 0;
+}
+
+div.mnBanner header {
+  text-align: center;
+}
+
+div.mnBanner header h6 {
+  margin-top: 20px;
+}
+
+div.mnBanner header .h5 {
+  margin-top: 150px;
+}
+
+div.ct01 {
+  background-color: #999;
+  padding: 350px 0;
+}
+
+div.ct01 header {
+  text-align: center;
+}
+
+div.ct01 header .p {
+  margin-top: 55px;
+}
+
+div.ct01 header .p p .mobileBr {
+  display: none;
+}
+
+div.ct01 header .p .p02 {
+  margin-top: 55px;
+}
+
+div.ct01 header .p .p02 .mobileBr {
+  display: none;
+}
+
+div.ct02 {
+  background-color: #ccc;
+  padding: 300px 0;
+}
+
+div.ct02 header {
+  height: 450px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+div.ct02 header article {
+  position: absolute;
+  width: 300px;
+  margin: auto;
+}
+
+div.ct02 header article .circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  outline: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.ct02 header article .texts {
+  margin-top: 40px;
+}
+
+div.ct02 header article .texts p {
+  padding-top: 20px;
+}
+
+div.ct02 header .a1 {
+  left: 90px;
+}
+
+div.ct02 header .a2 {
+  right: 0;
+  left: 0;
+}
+
+div.ct02 header .a3 {
+  right: 90px;
+}
+
+div.nav {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}
+
+div.nav .btns .image {
+  background-color: cornflowerblue;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+div.nav .btns .i2 {
+  margin-top: 20px;
+}

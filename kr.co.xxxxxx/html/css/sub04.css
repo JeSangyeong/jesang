@@ -2,19 +2,17 @@ div.content header h5 {
   text-align: center;
 }
 
-div.content header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 div.content header ul li {
   margin: 40px 10px 0px 10px;
+  cursor: pointer;
 }
 
 div.content header ul .clicked {
   border-bottom: 2px solid #000;
+}
+
+div.content section ul {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
