@@ -1,3 +1,28 @@
+@mixin ctFonts($fw, $fz, $lh, $c) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $c;
+}
+
+@mixin ctWidth {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@mixin bgSet {
+    background-color: #999;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin dpFlex($jc) {
+    display: flex;
+    justify-content: $jc;
+}
+
+
 div.content{
     header{
         text-align: center;
@@ -5,6 +30,7 @@ div.content{
             @include dpFlex(center);
             li{
                 margin: 40px 10px 0px 10px;
+                cursor: pointer;
             }
             .clicked{
                 border-bottom: 2px solid #000;

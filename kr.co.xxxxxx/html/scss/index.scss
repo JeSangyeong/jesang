@@ -1,14 +1,16 @@
 .topMenu{
+    background-color: #ccc;
     section{
+        @include ctWidth();
         .textView{
-            .textGtoup{
+            .textGroup{
                 h6{
-
+                    
                 }
             }
         }
         .btn{
-            
+
         }
     }
 }
