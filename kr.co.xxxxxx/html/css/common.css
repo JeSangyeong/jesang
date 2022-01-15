@@ -62,9 +62,6 @@ button {
 }
 
 div.content {
-  width: 90%;
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 160px 0;
 }
 

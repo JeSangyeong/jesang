@@ -22,3 +22,10 @@
     justify-content: $jc;
 }
 
+div.content{
+    header{
+        ul{
+            @include dpFlex(space-around);
+        }
+    }
+}
