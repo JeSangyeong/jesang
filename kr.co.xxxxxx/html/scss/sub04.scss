@@ -4,19 +4,16 @@
     line-height: $lh;
     color: $c;
 }
-
 @mixin ctWidth {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
 }
-
 @mixin bgSet {
     background-color: #999;
     background-position: center;
     background-size: cover;
 }
-
 @mixin dpFlex($jc) {
     display: flex;
     justify-content: $jc;
@@ -26,6 +23,7 @@ div.content{
     header{
         h5{text-align: center;}
         ul{
+            @include dpFlex(center);
             li{
                 margin: 40px 10px 0px 10px;
                 cursor: pointer;
@@ -36,12 +34,104 @@ div.content{
         }
     }
     section{
-        ul{
-            @include ctWidth;
+        padding: 0 100px;
+        .top{
+            border-bottom: 1px solid #000;
+            padding: 40px 0;
             li{
-                h4{}
+                @include dpFlex(flex-start);
+                h4{width: 80%;}
                 ul{
-                    li{}
+                    width: 15%;
+                    li{
+                        display: none;
+                        margin-right: 40px;
+                    }
+                    .clicked{
+                        display: block;
+                    }
+                }
+                .btn{
+                    width: 5%;
+                    button{
+                        width: 30px; height: 30px;
+                    }
+                }
+                }
+        }
+        .notice,.faq{
+            li{
+                border-bottom: 1px solid #000;
+                .texts{
+                    @include dpFlex(flex-start);
+                    padding: 30px;
+                    cursor: pointer;
+                    position: relative;
+                    h6{
+                        width: 10%;
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                    p{
+                        line-height: 20px;
+                        font-size: 16px;
+                    }
+                    &::after{
+                        content: '';
+                        width: 15px; height: 2px;
+                        transform: rotate(90deg);
+                        background-color: #000;
+                        position: absolute;
+                        margin: auto;
+                        top: 0; bottom: 0;
+                        right: 30px;
+                    }
+                    &::before{
+                        content: '';
+                        width: 15px; height: 2px;
+                        background-color: #000;
+                        position: absolute;
+                        margin: auto;
+                        top: 0; bottom: 0;
+                        right: 30px;
+                    }
+                }
+                .innerTexts{
+                    background-color: #eee;
+                    padding: 30px;
+                    font-size: 15px;
+                    li{
+                        border: 0;
+                    }
+                }
+            }
+        }
+        .review{
+            display: none;
+            li{
+                border-bottom: 1px solid #000;
+                @include dpFlex(space-between);
+                padding: 20px 0; 
+                .texts{
+                    .star{
+                        margin: 20px 0;
+                        width: 90px;
+                        height: 20px;
+                        @include bgSet;
+                        background-image: url(../img/star.png);
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    ul{
+                        @include dpFlex(flex-start);
+                        li{
+                            font-size: 14px;
+                            font-style: italic;
+                            border: 0;
+                            padding: 40px 50px 20px 0;
+                        }
+                    }
                 }
             }
         }

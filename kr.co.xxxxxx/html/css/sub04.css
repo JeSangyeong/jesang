@@ -13,8 +13,161 @@ div.content header ul {
 
 div.content header ul li {
   margin: 40px 10px 0px 10px;
+  cursor: pointer;
 }
 
 div.content header ul .clicked {
   border-bottom: 2px solid #000;
+}
+
+div.content section {
+  padding: 0 100px;
+}
+
+div.content section .top {
+  border-bottom: 1px solid #000;
+  padding: 40px 0;
+}
+
+div.content section .top li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+div.content section .top li h4 {
+  width: 80%;
+}
+
+div.content section .top li ul {
+  width: 15%;
+}
+
+div.content section .top li ul li {
+  display: none;
+  margin-right: 40px;
+}
+
+div.content section .top li ul .clicked {
+  display: block;
+}
+
+div.content section .top li .btn {
+  width: 5%;
+}
+
+div.content section .top li .btn button {
+  width: 30px;
+  height: 30px;
+}
+
+div.content section .notice li, div.content section .faq li {
+  border-bottom: 1px solid #000;
+}
+
+div.content section .notice li .texts, div.content section .faq li .texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+div.content section .notice li .texts h6, div.content section .faq li .texts h6 {
+  width: 10%;
+  font-size: 16px;
+  text-align: center;
+}
+
+div.content section .notice li .texts p, div.content section .faq li .texts p {
+  line-height: 20px;
+  font-size: 16px;
+}
+
+div.content section .notice li .texts::after, div.content section .faq li .texts::after {
+  content: '';
+  width: 15px;
+  height: 2px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: #000;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+}
+
+div.content section .notice li .texts::before, div.content section .faq li .texts::before {
+  content: '';
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+}
+
+div.content section .notice li .innerTexts, div.content section .faq li .innerTexts {
+  background-color: #eee;
+  padding: 30px;
+  font-size: 15px;
+}
+
+div.content section .notice li .innerTexts li, div.content section .faq li .innerTexts li {
+  border: 0;
+}
+
+div.content section .review {
+  display: none;
+}
+
+div.content section .review li {
+  border-bottom: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+
+div.content section .review li .texts .star {
+  margin: 20px 0;
+  width: 90px;
+  height: 20px;
+  background-color: #999;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/star.png);
+}
+
+div.content section .review li .texts p {
+  font-size: 14px;
+}
+
+div.content section .review li .texts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+div.content section .review li .texts ul li {
+  font-size: 14px;
+  font-style: italic;
+  border: 0;
+  padding: 40px 50px 20px 0;
 }
