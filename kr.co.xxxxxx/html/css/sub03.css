@@ -1,0 +1,71 @@
+div.mnBanner {
+  background-color: #ccc;
+  padding: 250px 0;
+}
+
+div.mnBanner header {
+  text-align: center;
+}
+
+div.mnBanner header h6 {
+  margin-top: 50px;
+}
+
+div.toggle .btns {
+  text-align: center;
+}
+
+div.toggle .btns button {
+  width: calc(100% / 6);
+  height: 50px;
+  margin-left: -5px;
+  outline: 1px solid #000;
+}
+
+div.toggle .btns .b1 {
+  background-color: cornsilk;
+}
+
+div.toggle .btns .b2 {
+  background-color: burlywood;
+}
+
+div.toggle .btns .b3 {
+  background-color: blanchedalmond;
+}
+
+div.toggle .btns .b4 {
+  background-color: beige;
+}
+
+div.ct01 {
+  padding: 0;
+  background-color: #999;
+}
+
+div.ct01 .texts {
+  text-align: center;
+}
+
+div.ct01 .texts h3 {
+  margin-top: 50px;
+}
+
+div.ct01 .texts h5 {
+  margin-top: 50px;
+}
+
+div.ct01 .image {
+  width: calc(100% / 3);
+  height: 0;
+  padding-top: calc(100% / 2);
+}
+
+div.ct01 .btn {
+  text-align: center;
+}
+
+div.ct01 .btn button {
+  width: calc(100% / 3);
+  height: 80px;
+}

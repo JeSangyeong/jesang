@@ -1,0 +1,66 @@
+div.mnBanner{
+    background-color: #ccc;
+    padding: 250px 0;
+    header{
+        text-align: center;
+        h6{
+            margin-top: 50px;
+        }
+    }
+}
+div.toggle{
+    .btns{
+        text-align: center;
+        button{
+            width: calc(100% / 6);
+            height: 50px;
+            margin-left: -5px;
+            outline: 1px solid #000;
+        }
+        .b1{background-color: cornsilk;}
+        .b2{background-color: burlywood;}
+        .b3{background-color: blanchedalmond;}
+        .b4{background-color: beige;}
+    }
+}
+div.ct01{
+    padding: 0 ;
+    background-color: #999;
+    .texts{
+        text-align: center;
+        h3{margin-top: 50px;}
+        h5{margin-top: 50px;}
+    }
+    .image{
+        width: calc(100% / 3 );
+        height: 0;
+        padding-top: calc(100% / 2);
+    }
+    .btn{
+        text-align: center;
+        button{
+            width: calc(100% / 3);
+            height: 80px;
+        }
+    }
+}
+div.ct02{
+
+    .texts{}
+}
+div.ct03{
+    header{}
+    section{
+        .artWrap{}
+        .btn{}
+        .texts{}
+    }
+}
+div.ct04{
+    header{}
+    section{
+        .artWrap{}
+        .btn{}
+        .texts{}
+    }
+}
