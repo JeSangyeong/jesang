@@ -87,6 +87,10 @@ div.hdrWrap header .icons {
           justify-content: space-between;
 }
 
+div.mnBannerView {
+  position: relative;
+}
+
 div.mnBannerView .mnBannerGroup {
   width: 300%;
   display: -webkit-box;
@@ -98,7 +102,7 @@ div.mnBannerView .mnBannerGroup .mnBanner {
   width: calc(100% / 3);
   height: 0;
   padding-top: calc(100% / 26 * 3);
-  background-color: #eee;
+  background-color: #999;
   position: relative;
 }
 
@@ -115,4 +119,188 @@ div.mnBannerView .mnBannerGroup .mnBanner header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+div.mnBannerView .mnBannerGroup .mnBanner header .texts h6 {
+  margin-top: 40px;
+}
+
+div.mnBannerView .mnBannerGroup .mnBanner header .texts .btn {
+  margin-top: 40px;
+}
+
+div.mnBannerView .mnBannerGroup .mnBanner header .texts .btn button {
+  width: 240px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 25px;
+}
+
+div.mnBannerView .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 50px;
+  left: 160px;
+}
+
+div.mnBannerView .nav button {
+  width: 50px;
+  height: 20px;
+}
+
+div.mnBannerView .nav .num {
+  width: 50px;
+  height: 60px;
+  position: relative;
+}
+
+div.mnBannerView .nav .num li {
+  color: #fff;
+  position: absolute;
+}
+
+div.mnBannerView .nav .num .top {
+  top: 0;
+  left: 5px;
+}
+
+div.mnBannerView .nav .num .bot {
+  bottom: 0;
+  right: 5px;
+}
+
+div.follow section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.follow section .image {
+  width: calc(100% / 12 * 6 - 15px);
+  height: 0;
+  padding-top: calc(100% / 2 * 1);
+  background-color: #ccc;
+  border-radius: 20px;
+}
+
+div.follow section .texts {
+  padding: 120px 40px;
+  width: calc(100% / 12 * 6 - 15px);
+  text-align: center;
+}
+
+div.follow section .texts h3 {
+  line-height: 120px;
+}
+
+div.follow section .texts .btn {
+  margin-top: 40px;
+}
+
+div.follow section .texts .btn button {
+  width: 240px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+div.menu header {
+  text-align: center;
+}
+
+div.menu section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+div.menu section .btn {
+  width: calc(100% / 12 * 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.menu section .btn button {
+  width: 35px;
+  height: 70px;
+}
+
+div.menu section .graph {
+  width: 75%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+
+div.menu section .graph li {
+  width: 33.33%;
+  height: 2px;
+  background-color: #e90;
+}
+
+div.menu section .artView {
+  width: calc(100% / 12 * 10 - 20px);
+  overflow: hidden;
+}
+
+div.menu section .artView .artGroup {
+  width: 166.66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.menu section .artView .artGroup article {
+  width: calc(100% / 5 - 20px);
+}
+
+div.menu section .artView .artGroup article .texts {
+  text-align: center;
+}
+
+div.menu section .artView .artGroup article .image {
+  width: 100%;
+  height: 0;
+  padding-top: calc(100% / 1 * 1);
+  position: relative;
+}
+
+div.menu section .artView .artGroup article .image img {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+div.review header .imgView .imgGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }

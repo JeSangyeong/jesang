@@ -137,7 +137,7 @@ div.mnBannerView{
         align-items: center;
         position: absolute;
         bottom: 50px;
-        left: 63px;
+        left: 160px;
         // 화살표들 통합크기
         button{
             width: 50px;
@@ -206,21 +206,73 @@ div.menu{
     }
     section{
         display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 40px;
         .btn{
             width: calc(100% / 12 * 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+                width: 35px;
+                height: 70px;
+            }
         }
-        .btP{}
-        .btN{}
+        .graph{
+            width: 75%;
+            height: 2px;
+            background-color: #ccc;
+            margin: 0 auto;
+            li{
+                width: 33.33%;
+                height: 2px;
+                background-color: #e90;
+            }
+        }
         .artView{
+            width: calc(100% / 12 * 10 - 20px);
+            overflow: hidden;
             .artGroup{
                 // 아티클 5개값
                 width: 166.66%;
                 display: flex;
+                justify-content: space-around;
                 article{
                     width: calc(100% / 5 - 20px);
+                    .texts{
+                        text-align: center;
+                    }
+                    .image{
+                        width: 100%;
+                        height: 0;
+                        padding-top: calc(100% / 1 * 1);
+                        position: relative;
+                        img{
+                            position: absolute;
+                            margin: auto;
+                            left: 0;right: 0;bottom: 0;top: 0;
+                        }
+                    }
                 }
             }
         }
         
+    }
+}
+
+div.review{
+    header{
+        .texts{}
+        .imgView{
+            .imgGroup{
+                display: flex;
+                justify-content: space-between;
+                
+                .image{
+                    
+                }
+            }
+        }
     }
 }
