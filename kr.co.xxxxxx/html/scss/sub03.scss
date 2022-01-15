@@ -1,6 +1,11 @@
+@mixin dpFlex($jc) {
+    display: flex;
+    justify-content: $jc;
+}
+
 div.mnBanner{
     background-color: #ccc;
-    padding: 250px 0;
+    padding: 300px 0;
     header{
         text-align: center;
         h6{
@@ -9,6 +14,7 @@ div.mnBanner{
     }
 }
 div.toggle{
+    margin-top: -50px;
     .btns{
         text-align: center;
         button{
@@ -24,43 +30,148 @@ div.toggle{
     }
 }
 div.ct01{
-    padding: 0 ;
+    padding: 70px 0 160px 0;
     background-color: #999;
-    .texts{
-        text-align: center;
-        h3{margin-top: 50px;}
-        h5{margin-top: 50px;}
-    }
-    .image{
-        width: calc(100% / 3 );
-        height: 0;
-        padding-top: calc(100% / 2);
-    }
-    .btn{
-        text-align: center;
-        button{
-            width: calc(100% / 3);
-            height: 80px;
+    header{
+        .texts{
+            text-align: center;
+            h3{margin-top: 50px;}
+            h5{margin-top: 50px;}
+        }
+        .image{
+            width: calc(100% / 3 );
+            height: 0;
+            padding-top: calc(100% / 20 * 5);
+            background-color: cornsilk;
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+        .btn{
+            text-align: center;
+            margin-top: 80px;
+            button{
+                width: calc(100% / 3);
+                height: 80px;
+            }
         }
     }
 }
 div.ct02{
-
-    .texts{}
+    background-color: #ccc;
+    header{
+        padding: 0 0 150px 0;
+        .texts{
+            text-align: center;
+            h3{
+                margin-top: 20px;
+            }
+            h5{
+                margin-top: 25px;
+            }
+        }
+    }
 }
 div.ct03{
-    header{}
+    background-color: #999;
+    text-align: center;
+    header{
+        h5{
+            margin-top: 20px;
+        }
+    }
     section{
-        .artWrap{}
-        .btn{}
-        .texts{}
+        .artWrap{
+            background-color: #fff;
+            border-radius: 20px;
+            .artGroup{
+                @include dpFlex(space-around);
+                padding: 80px 80px 0 80px;
+                article{
+                    width: calc(100% / 3 - 80px);
+                    outline: 1px solid #000;
+                    padding: 30px 0;
+                    h4{}
+                    hr{
+                        margin: 0 auto;
+                        background-color: #000;
+                        height: 1px;
+                        width: 70%;
+                        margin-top: 20px;
+                    }
+                    h5{
+                        margin-top: 25px;
+                    }
+                }
+            }
+            p{padding: 40px 0 100px 0;}
+        }
+        .btn{
+            text-align: center;
+            margin-top: -40px;
+            button{
+                width: calc(100% / 3);
+                height: 80px;
+                background-color: khaki;
+            }
+        }
+        .texts{
+            margin-top: 80px;
+            text-align-last: left;
+            p{
+                margin-top: 20px;
+            }
+        }
     }
 }
 div.ct04{
-    header{}
+    background-color: #ccc;
+    text-align: center;
+    header{
+        h5{
+            margin-top: 20px;
+        }
+    }
     section{
-        .artWrap{}
-        .btn{}
-        .texts{}
+        .artWrap{
+            background-color: #fff;
+            border-radius: 20px;
+            .artGroup{
+                @include dpFlex(space-around);
+                padding: 80px 80px 0 80px;
+                article{
+                    width: calc(100% / 3 - 80px);
+                    outline: 1px solid #000;
+                    padding: 30px 0;
+                    h4{}
+                    hr{
+                        margin: 0 auto;
+                        background-color: #000;
+                        height: 1px;
+                        width: 70%;
+                        margin-top: 20px;
+                    }
+                    h5{
+                        margin-top: 25px;
+                    }
+                }
+            }
+            p{padding: 40px 0 100px 0;}
+        }
+        .btn{
+            text-align: center;
+            margin-top: -40px;
+            button{
+                width: calc(100% / 3);
+                height: 80px;
+                background-color: khaki;
+            }
+        }
+        .texts{
+            margin-top: 80px;
+            text-align-last: left;
+            p{
+                margin-top: 20px;
+            }
+        }
     }
 }

@@ -1,3 +1,27 @@
+@mixin ctFonts($fw, $fz, $lh, $c) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $c;
+}
+
+@mixin ctWidth {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@mixin bgSet {
+    background-color: #999;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin dpFlex($jc) {
+    display: flex;
+    justify-content: $jc;
+}
+
 div.content{
     header{
         h5{text-align: center;}
