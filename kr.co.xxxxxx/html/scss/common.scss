@@ -53,11 +53,11 @@ h4{
 //문단제목
 h5{
     font-family: 'SourceSerifPro-Regular', sans-serif;
-    @include ctFonts(500, 24px, 80px, #333);
+    @include ctFonts(500, 24px, 40px, #333);
 }
 //보조제목
 h6{
-    @include ctFonts(500, 28px, 80px, #000);
+    @include ctFonts(500, 14px, 20px, #000);
 }
 
 button{
@@ -76,6 +76,7 @@ div.content{
     }
 }
 
+//모바일ver
 @media(max-width:420px){
     body{
         font-family: 'Circular Std book', sans-serif;
@@ -98,10 +99,11 @@ div.content{
     }
     h5{
         font-family: 'SourceSerifPro-Regular', sans-serif;
+        font-style: italic;
         @include ctFonts(500, 16px, 80px, #333);
     }
     h6{
-        @include ctFonts(500, 12px, 80px, #000);
+        @include ctFonts(500, 12px, 20px, #000);
     }
 
     div.content{
