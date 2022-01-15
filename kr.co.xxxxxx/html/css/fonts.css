@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'Circular Std Black';
+    font-weight: 900;
+    src: url('../fonts/Circular\ Std\ Black.otf');
+}
+@font-face {
+    font-family: 'Circular Std Bold';
+    font-weight: 700;
+    src: url('../fonts/Circular\ Std\ Bold.otf');
+}
+
+@font-face {
+    font-family: 'Circular Std Medium';
+    font-weight: 500;
+    src: url('../fonts/Circular\ Std\ Medium.otf');
+}
+@font-face {
+    font-family: 'Circular Std Book';
+    font-weight: 100;
+    src: url('../fonts/CircularStd-Book.otf');
+}
+
+
+@font-face {
+    font-family: 'SourceSerifPro-Black';
+    font-weight: 900;
+    src: url('../fonts/SourceSerifPro-Black.otf');
+}
+@font-face {
+    font-family: 'SourceSerifPro-Bold';
+    font-weight: 700;
+    src: url('../fonts/SourceSerifPro-Bold.otf');
+}
+@font-face {
+    font-family: 'SourceSerifPro-Semibold';
+    font-weight: 500;
+    src: url('../fonts/SourceSerifPro-Semibold.otf');
+}
+@font-face {
+    font-family: 'SourceSerifPro-Regular';
+    font-weight: 300;
+    src: url('../fonts/SourceSerifPro-Regular.otf');
+}
+@font-face {
+    font-family: 'SourceSerifPro-Light';
+    font-weight: 100;
+    src: url('../fonts/SourceSerifPro-Light.otf');
+}
+@font-face {
+    font-family: 'SourceSerifPro-ExtraLight';
+    font-weight: 100;
+    src: url('../fonts/SourceSerifPro-ExtraLight.otf');
+}

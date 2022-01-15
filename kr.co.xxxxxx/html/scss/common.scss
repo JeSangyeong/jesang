@@ -1,0 +1,114 @@
+@import url(../css/fonts.css);
+
+@mixin ctFonts($fw, $fz, $lh, $c) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $c;
+}
+
+@mixin ctWidth {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@mixin bgSet {
+    background-color: #999;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin dpFlex($jc) {
+    display: flex;
+    justify-content: $jc;
+}
+
+body{
+    font-family: 'Circular Std book', sans-serif;
+    @include ctFonts(500, 18px, 26px, #000);
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h6,li,button{
+    font-family: 'Circular Std book', sans-serif;
+}
+ //로고
+h1{
+    @include ctFonts(900, 52px, 80px, #000);
+    text-transform: uppercase;
+}
+//배너타이틀
+h2{
+    @include ctFonts(900, 72px, 100px, #000);
+}
+//컨텐츠타이틀
+h3{
+    @include ctFonts(500, 60px, 80px, #000);
+}
+// 아티클제목
+h4{
+    @include ctFonts(500, 32px, 40px, #000);
+}
+//문단제목
+h5{
+    font-family: 'SourceSerifPro-Regular', sans-serif;
+    @include ctFonts(500, 24px, 80px, #333);
+}
+//보조제목
+h6{
+    @include ctFonts(500, 28px, 80px, #000);
+}
+
+button{
+    text-transform: uppercase;
+    border: 0;
+}
+
+div.content{
+    @include ctWidth;
+    padding: 160px 0 ;
+}
+
+div.content{
+    section{
+        margin-top: 80px;
+    }
+}
+
+@media(max-width:420px){
+    body{
+        font-family: 'Circular Std book', sans-serif;
+        @include ctFonts(500, 12px, 26px, #000);
+        overflow-x: hidden;
+    }
+    
+    h1,h2,h3,h4,h6,li,button{
+        font-family: 'Circular Std book', sans-serif;
+    }
+    h1{
+        @include ctFonts(900, 28px, 80px, #000);
+        text-transform: uppercase;
+    }
+    h2{
+        @include ctFonts(900, 36px, 80px, #000);
+    }
+    h3{
+        @include ctFonts(500, 20px, 80px, #000);
+    }
+    h5{
+        font-family: 'SourceSerifPro-Regular', sans-serif;
+        @include ctFonts(500, 16px, 80px, #333);
+    }
+    h6{
+        @include ctFonts(500, 12px, 80px, #000);
+    }
+
+    div.content{
+        padding: 80px 0;
+        section{
+            margin-top: 80px;
+        }
+    }
+}
+
