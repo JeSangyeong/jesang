@@ -2,12 +2,23 @@ div.content{
     header{
         h5{text-align: center;}
         ul{
-            @include dpFlex(center);
             li{
                 margin: 40px 10px 0px 10px;
+                cursor: pointer;
             }
             .clicked{
                 border-bottom: 2px solid #000;
+            }
+        }
+    }
+    section{
+        ul{
+            @include ctWidth;
+            li{
+                h4{}
+                ul{
+                    li{}
+                }
             }
         }
     }
