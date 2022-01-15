@@ -33,7 +33,7 @@ div.content section {
 }
 
 div.content section article {
-  width: calc(100% / 3 - 8%);
+  width: calc(100% / 3 - 5%);
 }
 
 div.content section article .image {
@@ -58,7 +58,36 @@ div.content section article .btn {
 }
 
 div.content section article .btn button {
-  width: 70%;
+  width: 80%;
   height: 50px;
   border-radius: 30px;
+}
+
+@media (max-width: 960px) {
+  div.content header ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  div.content section {
+    margin-top: 120px;
+    row-gap: 80px;
+  }
+  div.content section article {
+    width: calc(100% / 3 - 5%);
+  }
+}
+
+@media (max-width: 560px) {
+  div.content section {
+    display: block;
+    margin-top: 60px;
+  }
+  div.content section article {
+    width: 100%;
+    margin-top: 40px;
+  }
+  div.content section article:nth-of-type(1) {
+    margin-top: 0;
+  }
 }
