@@ -1,0 +1,14 @@
+div.content{
+    header{
+        h5{text-align: center;}
+        ul{
+            @include dpFlex(center);
+            li{
+                margin: 40px 10px 0px 10px;
+            }
+            .clicked{
+                border-bottom: 2px solid #000;
+            }
+        }
+    }
+}

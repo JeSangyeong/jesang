@@ -1,7 +1,63 @@
+div.content header {
+  text-align: center;
+}
+
 div.content header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.content header ul li {
+  margin: 40px 10px 0px 10px;
+}
+
+div.content header ul .clicked {
+  border-bottom: 2px solid #000;
+}
+
+div.content section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 120px;
+  margin-top: 160px;
+}
+
+div.content section article {
+  width: calc(100% / 3 - 8%);
+}
+
+div.content section article .image {
+  height: 0;
+  padding-top: calc(100% / 1 * 1);
+  background-color: #999;
+  border-radius: 20px;
+}
+
+div.content section article .texts {
+  text-align: center;
+  padding: 30px;
+}
+
+div.content section article .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.content section article .btn button {
+  width: 70%;
+  height: 50px;
+  border-radius: 30px;
 }
