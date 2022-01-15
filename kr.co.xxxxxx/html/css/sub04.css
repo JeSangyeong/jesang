@@ -20,10 +20,6 @@ div.content header ul .clicked {
   border-bottom: 2px solid #000;
 }
 
-div.content section {
-  padding: 0 100px;
-}
-
 div.content section .top {
   border-bottom: 1px solid #000;
   padding: 40px 0;

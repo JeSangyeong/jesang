@@ -1,8 +1,5 @@
 @import url(../css/fonts.css);
-<<<<<<< HEAD
 
-=======
->>>>>>> d56b8d203dcb7c97275eb865ba7a7bca994ff505
 @mixin ctFonts($fw, $fz, $lh, $c) {
     font-weight: $fw;
     font-size: $fz;
@@ -26,12 +23,6 @@
     display: flex;
     justify-content: $jc;
 }
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> d56b8d203dcb7c97275eb865ba7a7bca994ff505
 
 body{
     font-family: 'Circular Std book', sans-serif;
