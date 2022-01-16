@@ -26,6 +26,10 @@ div.topMenu header .textView {
   overflow: hidden;
 }
 
+div.topMenu header .textView .textGroup {
+  text-align: center;
+}
+
 div.topMenu header .btn {
   position: absolute;
   margin: auto;
