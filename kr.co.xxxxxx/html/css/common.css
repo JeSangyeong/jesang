@@ -264,13 +264,13 @@ div.ftrWrap footer {
 }
 
 div.ftrWrap footer .logoBox {
-  width: calc(100% / 12 * 4 - 10px);
+  width: 32%;
 }
 
 div.ftrWrap footer .logoBox h1 {
   font-weight: 500;
-  font-size: 42px;
-  line-height: 40px;
+  font-size: 48px;
+  line-height: 50px;
   color: #000;
 }
 
@@ -280,14 +280,14 @@ div.ftrWrap footer .logoBox .tmi {
 
 div.ftrWrap footer .logoBox .tmi li {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 26px;
   color: #000;
 }
 
 div.ftrWrap footer .logoBox .tmi li:last-of-type {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 20px;
   color: red;
   margin-top: 40px;
@@ -300,10 +300,11 @@ div.ftrWrap footer .navBox {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: calc(100% / 12 * 6 - 10px);
+  width: 48%;
 }
 
 div.ftrWrap footer .navBox li {
+  padding-right: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -311,11 +312,8 @@ div.ftrWrap footer .navBox li {
 }
 
 div.ftrWrap footer .navBox li h5 {
+  line-height: 60px;
   cursor: pointer;
-}
-
-div.ftrWrap footer .navBox li ul {
-  padding-right: 80px;
 }
 
 div.ftrWrap footer .navBox li ul li {
@@ -323,7 +321,25 @@ div.ftrWrap footer .navBox li ul li {
 }
 
 div.ftrWrap footer .custom {
-  width: calc(100% / 12 * 2 - 10px);
+  width: 20%;
+}
+
+div.ftrWrap footer .custom h5 {
+  line-height: 60px;
+}
+
+div.ftrWrap footer .custom .texts h4 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 50px;
+  color: #000;
+}
+
+div.ftrWrap footer .custom .texts p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
 }
 
 div.ftrWrap footer .custom .btn {
@@ -353,9 +369,9 @@ div.ftrWrap footer .ftrBot .texts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 div.ftrWrap footer .ftrBot .texts li {
@@ -370,14 +386,117 @@ div.ftrWrap footer .ftrBot .sns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 155px;
 }
 
 div.ftrWrap footer .ftrBot .sns li {
   background-image: url("../img/icon_c.svg");
-  width: 30px;
-  height: 30px;
-  margin: 0 10px;
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+@media (max-width: 1290px) {
+  div.ftrWrap {
+    position: relative;
+    padding: 30px 0 20px 0;
+  }
+  div.ftrWrap footer {
+    display: block;
+  }
+  div.ftrWrap footer .logoBox {
+    width: 100%;
+  }
+  div.ftrWrap footer .logoBox h1 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 30px;
+    color: #000;
+  }
+  div.ftrWrap footer .logoBox .tmi li {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 23px;
+    color: #000;
+  }
+  div.ftrWrap footer .logoBox .tmi li:last-of-type {
+    position: absolute;
+    bottom: 95px;
+  }
+  div.ftrWrap footer .navBox {
+    display: none;
+  }
+  div.ftrWrap footer .custom {
+    width: 100%;
+    padding: 15px 0;
+    margin: 15px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  div.ftrWrap footer .custom h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000;
+    position: relative;
+    cursor: pointer;
+  }
+  div.ftrWrap footer .custom h5::after {
+    content: '';
+    width: 15px;
+    height: 2px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    background-color: #000;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  div.ftrWrap footer .custom h5::before {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  div.ftrWrap footer .custom .texts h4 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 45px;
+    color: #000;
+  }
+  div.ftrWrap footer .custom .texts p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #000;
+  }
+  div.ftrWrap footer .custom .btn {
+    margin-top: 20px;
+  }
+  div.ftrWrap footer .ftrBot {
+    display: block;
+  }
+  div.ftrWrap footer .ftrBot .texts li {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 40px;
+    color: #555;
+    margin-right: 40px;
+  }
+  div.ftrWrap footer .ftrBot .sns {
+    padding: 80px 0 20px 0;
+  }
+  div.ftrWrap footer .ftrBot .sns li {
+    margin-right: 22px;
+  }
 }
