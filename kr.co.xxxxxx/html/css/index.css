@@ -103,7 +103,7 @@ div.mnBannerView .nav {
           align-items: center;
   position: absolute;
   bottom: 50px;
-  left: 160px;
+  left: 240px;
 }
 
 div.mnBannerView .nav button {
@@ -111,25 +111,36 @@ div.mnBannerView .nav button {
   height: 20px;
 }
 
-div.mnBannerView .nav .num {
-  width: 50px;
-  height: 60px;
-  position: relative;
+div.mnBannerView .nav .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-div.mnBannerView .nav .num li {
+div.mnBannerView .nav .page span {
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 40px;
   color: #fff;
-  position: absolute;
+  margin-left: 10px;
 }
 
-div.mnBannerView .nav .num .top {
-  top: 0;
-  left: 5px;
+div.mnBannerView .nav .page span:nth-of-type(2) {
+  margin-left: 40px;
 }
 
-div.mnBannerView .nav .num .bot {
-  bottom: 0;
-  right: 5px;
+div.mnBannerView .nav .page hr {
+  width: 60px;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 div.follow section {

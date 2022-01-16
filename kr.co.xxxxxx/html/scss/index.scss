@@ -117,7 +117,7 @@ div.mnBannerView {
         align-items: center;
         position: absolute;
         bottom: 50px;
-        left: 160px;
+        left: 240px;
 
         // 화살표들 통합크기
         button {
@@ -129,24 +129,18 @@ div.mnBannerView {
             button {}
         }
 
-        .num {
-            width: 50px;
-            height: 60px;
-            position: relative;
-
-            li {
-                color: #fff;
-                position: absolute;
+        .page{
+            @include dpFlex(space-around);
+            flex-direction: column;
+            span{
+                @include ctFonts(100, 20px, 40px, #fff);
+                margin-left: 10px;
+                &:nth-of-type(2){margin-left: 40px;}
             }
-
-            .top {
-                top: 0;
-                left: 5px;
-            }
-
-            .bot {
-                bottom: 0;
-                right: 5px;
+            hr{
+                width: 60px; height: 1px;
+                background-color: #fff;
+                transform: rotate(135deg);
             }
         }
 
