@@ -6,33 +6,29 @@
     line-height: $lh;
     color: $c;
 }
-
 @mixin ctWidth {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
-
 @mixin bgSet {
     background-color: #999;
     background-position: center;
     background-size: cover;
 }
-
 @mixin dpFlex($jc) {
     display: flex;
     justify-content: $jc;
 }
-
 body{
     font-family: 'Circular Std book', sans-serif;
     @include ctFonts(500, 18px, 26px, #000);
     overflow-x: hidden;
 }
-
 h1,h2,h3,h4,h6,li,button{
     font-family: 'Circular Std book', sans-serif;
 }
+
  //로고
 h1{
     @include ctFonts(900, 42px, 80px, #000);
@@ -114,50 +110,7 @@ div.content{
     }
 }
 
-div.hdrWrap {
-    padding: 40px 0;
-    position: fixed;
-    width: 100%;
-    top: 30px;
-    z-index: 1;
-
-    header {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        @include ctWidth();
-        max-width: 1440px;
-
-        h1 {
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: calc(100% / 12 * 3);
-            text-align: center;
-            height: 80px;
-        }
-
-        .navWrap {
-            width: calc(100% / 12 * 3 + 40px);
-            display: flex;
-            justify-content: space-between;
-
-            li {
-                a {}
-            }
-        }
-
-        .icons {
-            width: calc(100% / 12 * 4 - 40px);
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-}
-
+//header
 div.hdrWrap {
     padding: 40px 0;
     position: fixed;
@@ -232,9 +185,12 @@ div.hdrWrap {
             .btn {}
         }
     }
+}
 
-    @media (max-width:960px) {
-        header {
+//태블릿 header
+@media (max-width:960px) {
+    div.hdrWrap{
+        header{
             .navWrap{
                 height: 30px;
                 .bar{
@@ -255,6 +211,89 @@ div.hdrWrap {
     }
 }
 
+
+
+//footer
+div.ftrWrap{
+    border-top: 1px solid #000;
+    padding: 60px 0;
+    footer{
+        @include ctWidth;
+        max-width: 1440px;
+        @include dpFlex(space-between);
+        flex-wrap: wrap;
+        row-gap: 40px;
+        .logoBox{
+            width: 32%;
+            h1{
+                @include ctFonts(500, 48px, 50px, #000);
+            }
+            .tmi{
+                margin-top: 20px;
+                li{
+                    @include ctFonts(500, 13px, 26px, #000);
+                    &:last-of-type{
+                        @include ctFonts(500, 12px, 20px, red);
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+        .navBox{
+            @include dpFlex(flex-start);
+            width: 48%;
+            li{
+                padding-right: 40px;
+                @include ctFonts(500, 16px, 30px, #000);
+                h5{
+                    line-height: 60px;
+                    cursor: pointer;
+                }
+                ul{
+                    li{color: #555;}
+                }
+            }
+        }
+        .custom{
+            width: 20%;
+            h5{line-height: 60px;}
+            .texts{
+                h4{@include ctFonts(500, 32px, 50px, #000);}
+                p{@include ctFonts(500, 14px, 20px, #000);}
+            }
+            .btn{
+                margin-top: 40px;
+                button{
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 25px;
+                }
+            }
+        }
+        .ftrBot{
+            width: 100%;
+            @include dpFlex(space-between);
+            align-items: center;
+            .texts{
+                @include dpFlex(flex-start);
+                li{
+                    @include ctFonts(500, 14px, 20px, #555);
+                    margin-right: 20px;
+                }
+            }
+            .sns{
+                @include dpFlex(flex-start);
+                padding-right: 155px;
+                li{
+                    background-image: url('../img/icon_c.svg');
+                    width: 25px;
+                    height: 25px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
 //모바일footer
 @media(max-width:1290px){
     div.ftrWrap{
