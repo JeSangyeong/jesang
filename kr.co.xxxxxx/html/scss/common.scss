@@ -53,7 +53,8 @@ h4{
 //문단제목
 h5{
     font-family: 'SourceSerifPro-Regular', sans-serif;
-    @include ctFonts(500, 24px, 40px, #333);
+    font-style: italic;
+    @include ctFonts(500, 20px, 40px, #333);
 }
 //보조제목
 h6{

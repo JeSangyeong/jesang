@@ -97,3 +97,34 @@ div.content{
         }
     }
 }
+
+div.ftrWrap{
+    border-top: 1px solid #000;
+    footer{
+        @include ctWidth;
+        @include dpFlex(space-between);
+        padding: 30px 0;
+        .logoBox{
+            .tmi{
+                margin-top: 40px;
+                li{
+                    &:last-of-type{
+                        color: red;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+        .navBox{
+            @include dpFlex(space-between);
+            li{
+                ul{
+                    li{cursor: pointer;}
+                }
+            }
+        }
+        .custom{}
+        .ftrBot{
+        }
+    }
+}
