@@ -45,7 +45,7 @@ div.ct02 {
   padding: 300px 0;
 }
 
-div.ct02 header {
+div.ct02 header .artWrap {
   height: 450px;
   text-align: center;
   display: -webkit-box;
@@ -56,13 +56,13 @@ div.ct02 header {
   position: relative;
 }
 
-div.ct02 header article {
+div.ct02 header .artWrap article {
   position: absolute;
   width: 300px;
   margin: auto;
 }
 
-div.ct02 header article .circle {
+div.ct02 header .artWrap article .circle {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -78,25 +78,25 @@ div.ct02 header article .circle {
           align-items: center;
 }
 
-div.ct02 header article .texts {
+div.ct02 header .artWrap article .texts {
   margin-top: 40px;
 }
 
-div.ct02 header article .texts p {
+div.ct02 header .artWrap article .texts p {
   padding-top: 20px;
 }
 
-div.ct02 header .a1 {
-  left: 90px;
+div.ct02 header .artWrap .a1 {
+  left: 70px;
 }
 
-div.ct02 header .a2 {
+div.ct02 header .artWrap .a2 {
   right: 0;
   left: 0;
 }
 
-div.ct02 header .a3 {
-  right: 90px;
+div.ct02 header .artWrap .a3 {
+  right: 70px;
 }
 
 div.nav {
@@ -114,4 +114,30 @@ div.nav .btns .image {
 
 div.nav .btns .i2 {
   margin-top: 20px;
+}
+
+@media (max-width: 960px) {
+  div.ct02 header {
+    width: 100%;
+  }
+  div.ct02 header .artWrap {
+    width: 150%;
+    position: relative;
+    left: -25%;
+  }
+}
+
+@media (max-width: 420px) {
+  div.ct02 header {
+    width: 100%;
+  }
+  div.ct02 header .artWrap {
+    width: 300%;
+    left: -100%;
+  }
+  div.ct02 header .artWrap article .circle {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
 }
