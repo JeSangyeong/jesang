@@ -229,6 +229,15 @@ div.hdrWrap header .icons button {
   }
 }
 
+@media (max-width: 420px) {
+  div.topMenu {
+    padding: 5px 0 !important;
+  }
+  div.hdrWrap {
+    padding: 15px 0;
+  }
+}
+
 div.ftrWrap {
   border-top: 1px solid #000;
   padding: 60px 0;

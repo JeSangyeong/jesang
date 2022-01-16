@@ -1,0 +1,89 @@
+div.content {
+    padding: 40px 0;
+    section{
+        margin-top: 40px;
+    }
+}
+
+div.mnBannerView{
+    .mnBannerGroup{
+        .mnBanner{
+            padding-top: calc(100% / 26 * 14);
+            header{
+                bottom: 120px;
+                .texts{
+                    .btn{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .nav{
+        left: 20px;
+        bottom: 20px;
+    }
+}
+
+div.follow{
+    section{
+        .texts{
+            padding: 0;
+            margin-top: 40px;
+            h3{
+                line-height: 80px;
+            }
+            .btn{
+                margin-top: 20px;
+                button{
+                    width: 140px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+div.slideReview{
+    .slideMenu{
+        padding-bottom: 400px;
+        header{
+            .imgView{
+                width: 90%;
+                .imgGroup{
+                    width: 550%;
+                    .texts{
+                        .btn{
+                            button{
+                                width: 140px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .review{
+        .artView{
+            width: 90%;
+            margin: 0 auto;
+            .btns{
+                display: none;
+            }
+            .artGroup{
+                width: 600%;
+                left: 0;
+                article{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+div.insta{
+    section{
+        justify-content: center;
+    }
+}

@@ -211,6 +211,16 @@ div.hdrWrap {
     }
 }
 
+@media (max-width:420px){
+    div.topMenu{
+        padding: 5px 0 !important; 
+    }
+    div.hdrWrap{
+        padding: 15px 0;
+    }
+}
+
+
 
 
 //footer

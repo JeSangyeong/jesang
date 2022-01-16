@@ -1,0 +1,83 @@
+div.content {
+  padding: 40px 0;
+}
+
+div.content section {
+  margin-top: 40px;
+}
+
+div.mnBannerView .mnBannerGroup .mnBanner {
+  padding-top: calc(100% / 26 * 14);
+}
+
+div.mnBannerView .mnBannerGroup .mnBanner header {
+  bottom: 120px;
+}
+
+div.mnBannerView .mnBannerGroup .mnBanner header .texts .btn {
+  display: none;
+}
+
+div.mnBannerView .nav {
+  left: 20px;
+  bottom: 20px;
+}
+
+div.follow section .texts {
+  padding: 0;
+  margin-top: 40px;
+}
+
+div.follow section .texts h3 {
+  line-height: 80px;
+}
+
+div.follow section .texts .btn {
+  margin-top: 20px;
+}
+
+div.follow section .texts .btn button {
+  width: 140px;
+  height: 40px;
+}
+
+div.slideReview .slideMenu {
+  padding-bottom: 400px;
+}
+
+div.slideReview .slideMenu header .imgView {
+  width: 90%;
+}
+
+div.slideReview .slideMenu header .imgView .imgGroup {
+  width: 550%;
+}
+
+div.slideReview .slideMenu header .imgView .imgGroup .texts .btn button {
+  width: 140px;
+  height: 40px;
+}
+
+div.slideReview .review .artView {
+  width: 90%;
+  margin: 0 auto;
+}
+
+div.slideReview .review .artView .btns {
+  display: none;
+}
+
+div.slideReview .review .artView .artGroup {
+  width: 600%;
+  left: 0;
+}
+
+div.slideReview .review .artView .artGroup article {
+  padding: 0;
+}
+
+div.insta section {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
