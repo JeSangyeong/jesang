@@ -167,16 +167,16 @@ div.ftrWrap{
         flex-wrap: wrap;
         row-gap: 40px;
         .logoBox{
-            width: calc(100% / 12 * 4 - 10px);
+            width: 32%;
             h1{
-                @include ctFonts(500, 42px, 40px, #000);
+                @include ctFonts(500, 48px, 50px, #000);
             }
             .tmi{
                 margin-top: 20px;
                 li{
-                    @include ctFonts(500, 14px, 26px, #000);
+                    @include ctFonts(500, 13px, 26px, #000);
                     &:last-of-type{
-                        @include ctFonts(500, 13px, 20px, red);
+                        @include ctFonts(500, 12px, 20px, red);
                         margin-top: 40px;
                     }
                 }
@@ -184,21 +184,25 @@ div.ftrWrap{
         }
         .navBox{
             @include dpFlex(flex-start);
-            width: calc(100% / 12 * 6 - 10px);
+            width: 48%;
             li{
+                padding-right: 40px;
                 @include ctFonts(500, 16px, 30px, #000);
-                h5{cursor: pointer;}
+                h5{
+                    line-height: 60px;
+                    cursor: pointer;
+                }
                 ul{
-                    padding-right: 80px;
                     li{color: #555;}
                 }
             }
         }
         .custom{
-            width: calc(100% / 12 * 2 - 10px);
+            width: 20%;
+            h5{line-height: 60px;}
             .texts{
-                h4{}
-                p{}
+                h4{@include ctFonts(500, 32px, 50px, #000);}
+                p{@include ctFonts(500, 14px, 20px, #000);}
             }
             .btn{
                 margin-top: 40px;
@@ -222,6 +226,7 @@ div.ftrWrap{
             }
             .sns{
                 @include dpFlex(space-between);
+                padding-right: 155px;
                 li{
                     background-image: url('../img/icon_c.svg');
                     width: 30px;

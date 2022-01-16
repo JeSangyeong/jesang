@@ -202,13 +202,13 @@ div.ftrWrap footer {
 }
 
 div.ftrWrap footer .logoBox {
-  width: calc(100% / 12 * 4 - 10px);
+  width: 32%;
 }
 
 div.ftrWrap footer .logoBox h1 {
   font-weight: 500;
-  font-size: 42px;
-  line-height: 40px;
+  font-size: 48px;
+  line-height: 50px;
   color: #000;
 }
 
@@ -218,14 +218,14 @@ div.ftrWrap footer .logoBox .tmi {
 
 div.ftrWrap footer .logoBox .tmi li {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 26px;
   color: #000;
 }
 
 div.ftrWrap footer .logoBox .tmi li:last-of-type {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 20px;
   color: red;
   margin-top: 40px;
@@ -238,10 +238,11 @@ div.ftrWrap footer .navBox {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: calc(100% / 12 * 6 - 10px);
+  width: 48%;
 }
 
 div.ftrWrap footer .navBox li {
+  padding-right: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -249,11 +250,8 @@ div.ftrWrap footer .navBox li {
 }
 
 div.ftrWrap footer .navBox li h5 {
+  line-height: 60px;
   cursor: pointer;
-}
-
-div.ftrWrap footer .navBox li ul {
-  padding-right: 80px;
 }
 
 div.ftrWrap footer .navBox li ul li {
@@ -261,7 +259,25 @@ div.ftrWrap footer .navBox li ul li {
 }
 
 div.ftrWrap footer .custom {
-  width: calc(100% / 12 * 2 - 10px);
+  width: 20%;
+}
+
+div.ftrWrap footer .custom h5 {
+  line-height: 60px;
+}
+
+div.ftrWrap footer .custom .texts h4 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 50px;
+  color: #000;
+}
+
+div.ftrWrap footer .custom .texts p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
 }
 
 div.ftrWrap footer .custom .btn {
@@ -311,6 +327,7 @@ div.ftrWrap footer .ftrBot .sns {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-right: 155px;
 }
 
 div.ftrWrap footer .ftrBot .sns li {
