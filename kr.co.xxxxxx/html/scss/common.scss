@@ -35,7 +35,7 @@ h1,h2,h3,h4,h6,li,button{
 }
  //로고
 h1{
-    @include ctFonts(900, 52px, 80px, #000);
+    @include ctFonts(900, 42px, 80px, #000);
     text-transform: uppercase;
 }
 //배너타이틀
@@ -44,7 +44,7 @@ h2{
 }
 //컨텐츠타이틀
 h3{
-    @include ctFonts(500, 60px, 80px, #000);
+    @include ctFonts(500, 36px, 80px, #000);
 }
 // 아티클제목
 h4{
