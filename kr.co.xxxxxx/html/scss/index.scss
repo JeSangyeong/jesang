@@ -394,9 +394,9 @@ div.insta{
     section{
         @include dpFlex(space-around);
         article{
-            width: calc(100% / 6 - 60px);
+            width: calc(100% / 6 - 10px);
             height: 0;
-            padding-top: calc(100% / 1 * 1);
+            padding-top: calc(100% / 7 * 1);
             background-color: #eee;
         }
     }
