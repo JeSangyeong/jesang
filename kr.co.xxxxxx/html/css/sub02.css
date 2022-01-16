@@ -106,6 +106,8 @@ div.ftrWrap footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 30px 0;
 }
 
@@ -129,4 +131,14 @@ div.ftrWrap footer .navBox {
 
 div.ftrWrap footer .navBox li ul li {
   cursor: pointer;
+}
+
+div.ftrWrap footer .ftrBot {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
