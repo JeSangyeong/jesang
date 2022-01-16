@@ -8,7 +8,13 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h6, li, button {
+h1,
+h2,
+h3,
+h4,
+h6,
+li,
+button {
   font-family: 'Circular Std book', sans-serif;
 }
 
@@ -66,7 +72,8 @@ div.content {
   padding: 160px 0;
 }
 
-div.content section, div.content header {
+div.content section,
+div.content header {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -85,7 +92,13 @@ div.content section {
     color: #000;
     overflow-x: hidden;
   }
-  h1, h2, h3, h4, h6, li, button {
+  h1,
+  h2,
+  h3,
+  h4,
+  h6,
+  li,
+  button {
     font-family: 'Circular Std book', sans-serif;
   }
   h1 {
@@ -145,6 +158,9 @@ div.hdrWrap header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -165,6 +181,24 @@ div.hdrWrap header h1 {
 
 div.hdrWrap header .navWrap {
   width: calc(100% / 12 * 3 + 40px);
+  position: relative;
+}
+
+div.hdrWrap header .navWrap .bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+div.hdrWrap header .navWrap .bar li {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  margin: 6px 0;
+}
+
+div.hdrWrap header .navWrap .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,13 +208,38 @@ div.hdrWrap header .navWrap {
 }
 
 div.hdrWrap header .icons {
-  width: calc(100% / 12 * 4 - 40px);
+  width: calc(100% / 12 * 3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+div.hdrWrap header .icons button {
+  background-image: url("../img/icon_search.svg");
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+}
+
+@media (max-width: 960px) {
+  div.hdrWrap header .navWrap {
+    height: 30px;
+  }
+  div.hdrWrap header .navWrap .bar {
+    display: block;
+  }
+  div.hdrWrap header .navWrap .nav {
+    display: none;
+  }
+  div.hdrWrap header .icons .btns {
+    display: none;
+  }
 }
 
 div.ftrWrap {

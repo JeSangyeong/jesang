@@ -1,0 +1,42 @@
+div.mnBannerView{
+    .mnBannerGroup{
+        .mnBanner{
+            padding-top: calc(100% / 26 * 11);
+            header{
+                top: auto;
+                bottom: 220px;
+            }
+        }
+    }
+    .nav{
+        left: 45px;
+    }
+}
+
+div.follow{
+    section{
+        flex-wrap: wrap;
+        .image{
+            width: 100%;
+            padding-top: calc(100% / 1 * 1);
+        }
+        .texts{
+            margin: 0 auto;
+        }
+    }
+}
+
+div.menu{
+    section{
+        .btn{
+            display: none;
+        }
+        .artView{
+            width: 100%;
+            overflow: inherit;
+            .artGroup{
+                width: 350%;
+            }
+        }
+    }
+}

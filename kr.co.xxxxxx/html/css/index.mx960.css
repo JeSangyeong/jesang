@@ -1,0 +1,39 @@
+div.mnBannerView .mnBannerGroup .mnBanner {
+  padding-top: calc(100% / 26 * 11);
+}
+
+div.mnBannerView .mnBannerGroup .mnBanner header {
+  top: auto;
+  bottom: 220px;
+}
+
+div.mnBannerView .nav {
+  left: 45px;
+}
+
+div.follow section {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.follow section .image {
+  width: 100%;
+  padding-top: calc(100% / 1 * 1);
+}
+
+div.follow section .texts {
+  margin: 0 auto;
+}
+
+div.menu section .btn {
+  display: none;
+}
+
+div.menu section .artView {
+  width: 100%;
+  overflow: inherit;
+}
+
+div.menu section .artView .artGroup {
+  width: 350%;
+}
