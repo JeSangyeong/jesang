@@ -41,56 +41,6 @@ div.topMenu header .btn button {
   height: 100%;
 }
 
-div.hdrWrap {
-  padding: 40px 0;
-  position: fixed;
-  width: 100%;
-  top: 30px;
-  z-index: 1;
-}
-
-div.hdrWrap header {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-div.hdrWrap header h1 {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: calc(100% / 12 * 3);
-  text-align: center;
-  height: 80px;
-}
-
-div.hdrWrap header .navWrap {
-  width: calc(100% / 12 * 3 + 40px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-div.hdrWrap header .icons {
-  width: calc(100% / 12 * 4 - 40px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 div.mnBannerView {
   position: relative;
 }
