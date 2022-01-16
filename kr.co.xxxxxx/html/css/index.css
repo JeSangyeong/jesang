@@ -296,29 +296,30 @@ div.menu section .artView .artGroup article .image img {
   top: 0;
 }
 
-div.slideMenu {
+div.slideReview .slideMenu {
   background-color: #eee;
-  height: 500px;
+  padding: 80px 0;
+  height: 385px;
 }
 
-div.slideMenu header .texts .btn {
+div.slideReview .slideMenu header .texts .btn {
   margin-top: 40px;
 }
 
-div.slideMenu header .texts .btn button {
+div.slideReview .slideMenu header .texts .btn button {
   width: 240px;
   height: 50px;
   border-radius: 25px;
   background-color: #999;
 }
 
-div.slideMenu header .imgView {
-  width: 60%;
+div.slideReview .slideMenu header .imgView {
+  width: 55%;
   margin-left: 45%;
   margin-top: -220px;
 }
 
-div.slideMenu header .imgView .imgGroup {
+div.slideReview .slideMenu header .imgView .imgGroup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,9 +329,67 @@ div.slideMenu header .imgView .imgGroup {
   width: 500%;
 }
 
-div.slideMenu header .imgView .imgGroup .image {
+div.slideReview .slideMenu header .imgView .imgGroup .image {
   width: calc(100% / 6 - 30px);
   height: 0;
   padding-top: calc(100% / 8 * 1);
   background-color: #ccc;
+}
+
+div.slideReview .review {
+  padding: 160px 0 80px;
+  background-color: #fee;
+}
+
+div.slideReview .review .artView {
+  position: relative;
+}
+
+div.slideReview .review .artView .btns {
+  position: absolute;
+  height: 40px;
+  width: 50%;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.slideReview .review .artView .btns button {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+}
+
+div.slideReview .review .artView .artGroup {
+  width: 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: -25%;
+}
+
+div.slideReview .review .artView .artGroup article {
+  width: calc(100% / 6);
+  text-align: center;
+  padding: 0 120px;
+}
+
+div.slideReview .review .artView .artGroup article .image {
+  background-image: url("../img/index_star.png");
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  width: 20%;
+  height: 0;
+  padding-top: calc(100% / 25 * 1);
+  margin: 0 auto;
 }

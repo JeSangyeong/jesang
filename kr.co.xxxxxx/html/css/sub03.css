@@ -11,34 +11,34 @@ div.mnBanner header h6 {
   margin-top: 50px;
 }
 
-div.toggle {
+div.tabMenu {
   margin-top: -50px;
 }
 
-div.toggle .btns {
+div.tabMenu .btns {
   text-align: center;
 }
 
-div.toggle .btns button {
+div.tabMenu .btns button {
   width: calc(100% / 6);
   height: 50px;
   margin-left: -5px;
   outline: 1px solid #000;
 }
 
-div.toggle .btns .b1 {
+div.tabMenu .btns .b1 {
   background-color: cornsilk;
 }
 
-div.toggle .btns .b2 {
+div.tabMenu .btns .b2 {
   background-color: burlywood;
 }
 
-div.toggle .btns .b3 {
+div.tabMenu .btns .b3 {
   background-color: blanchedalmond;
 }
 
-div.toggle .btns .b4 {
+div.tabMenu .btns .b4 {
   background-color: beige;
 }
 
@@ -60,7 +60,7 @@ div.ct01 header .texts h5 {
 }
 
 div.ct01 header .image {
-  width: calc(100% / 3);
+  width: calc(100% / 2);
   height: 0;
   padding-top: calc(100% / 20 * 5);
   background-color: cornsilk;
@@ -226,4 +226,27 @@ div.ct04 section .texts {
 
 div.ct04 section .texts p {
   margin-top: 20px;
+}
+
+@media (max-width: 960px) {
+  div.mnBanner {
+    padding: 500px 0;
+  }
+  div.tabMenu {
+    width: 100%;
+  }
+  div.tabMenu .btns button {
+    width: calc(100% / 4);
+  }
+  div.ct01 header .image {
+    width: calc(100% / 2);
+    padding-top: calc(100% / 2 * 1);
+  }
+  div.ct01 header .btn button {
+    width: 90%;
+    height: 60px;
+  }
+  div.ct02 {
+    padding: 160px 0 1000px 0;
+  }
 }
