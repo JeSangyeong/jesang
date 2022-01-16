@@ -40,41 +40,43 @@ div.ct02{
     background-color: #ccc;
     padding: 300px 0;
     header{
-        height: 450px;
-        text-align: center;
-        @include dpFlex(space-around);
-        position: relative;
-        article{
-            position: absolute;
-            width: 300px;
-            margin: auto;
-            // top: 0; bottom: 0;
-            .circle{
+        .artWrap{
+            height: 450px;
+            text-align: center;
+            @include dpFlex(space-around);
+            position: relative;
+            article{
+                position: absolute;
                 width: 300px;
-                height: 300px;
-                border-radius: 50%;
-                outline: 1px solid #000;
-                @include dpFlex(center);
-                align-items: center;
-                h5{
+                margin: auto;
+                // top: 0; bottom: 0;
+                .circle{
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    outline: 1px solid #000;
+                    @include dpFlex(center);
+                    align-items: center;
+                    h5{
+                    }
+                }
+                .texts{
+                    margin-top: 40px;
+                    p{
+                        padding-top: 20px;
+                    }
                 }
             }
-            .texts{
-                margin-top: 40px;
-                p{
-                    padding-top: 20px;
-                }
+            .a1{
+                left: 70px;
             }
-        }
-        .a1{
-            left: 90px;
-        }
-        .a2{
-            right: 0; left: 0;
-        }
-        .a3{
-            right: 90px;
-        }
+            .a2{
+                right: 0; left: 0;
+            }
+            .a3{
+                right: 70px;
+            }
+    }
     }
 }
 div.nav{
@@ -90,6 +92,42 @@ div.nav{
         }
         .i2{
             margin-top: 20px;
+        }
+    }
+}
+
+@media(max-width:960px){
+    div.ct02{
+        header{
+            width: 100%;
+            .artWrap{
+                width: 150%;
+                position: relative;
+                left: -25%;
+                article{
+                    .circle{}
+                    .texts{}
+                }
+            }
+        }
+    }
+}
+@media(max-width:420px){
+    div.ct02{
+        header{
+            width: 100%;
+            .artWrap{
+                width: 300%;
+                left: -100%;
+                article{
+                    .circle{
+                        margin: 0 auto;
+                        width: 200px;
+                        height: 200px;
+                    }
+                    .texts{}
+                }
+            }
         }
     }
 }
