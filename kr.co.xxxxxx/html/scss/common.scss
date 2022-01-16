@@ -113,3 +113,66 @@ div.content{
         }
     }
 }
+
+div.ftrWrap{
+    border-top: 1px solid #000;
+    padding: 60px 0;
+    footer{
+        @include ctWidth;
+        @include dpFlex(space-between);
+        flex-wrap: wrap;
+        row-gap: 40px;
+        .logoBox{
+            width: calc(100% / 12 * 4 - 10px);
+            .tmi{
+                margin-top: 40px;
+                li{
+                    &:last-of-type{
+                        color: red;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+        .navBox{
+            @include dpFlex(space-between);
+            width: calc(100% / 12 * 5 - 10px);
+            li{
+                ul{
+                    li{cursor: pointer;}
+                }
+            }
+        }
+        .custom{
+            width: calc(100% / 12 * 3 - 10px);
+            .btn{
+                margin-top: 40px;
+                button{
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 25px;
+                }
+            }
+        }
+        .ftrBot{
+            width: 100%;
+            @include dpFlex(space-between);
+            align-items: center;
+            .texts{
+                @include dpFlex(space-between);
+                li{
+                    margin-right: 20px;
+                }
+            }
+            .sns{
+                @include dpFlex(space-between);
+                li{
+                    background-image: url('../img/icon_c.svg');
+                    width: 30px;
+                    height: 30px;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}

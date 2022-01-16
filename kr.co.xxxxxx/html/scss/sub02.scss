@@ -85,7 +85,6 @@ div.content{
 
 @media (max-width: 560px){
     div.content{
-        header{}
         section{
             display: block;
             margin-top: 60px;
@@ -94,42 +93,6 @@ div.content{
                 margin-top: 40px;
                 &:nth-of-type(1){margin-top: 0;}
             }
-        }
-    }
-}
-
-div.ftrWrap{
-    border-top: 1px solid #000;
-    footer{
-        @include ctWidth;
-        @include dpFlex(space-between);
-        flex-wrap: wrap;
-        padding: 30px 0;
-        .logoBox{
-            .tmi{
-                margin-top: 40px;
-                li{
-                    &:last-of-type{
-                        color: red;
-                        margin-top: 40px;
-                    }
-                }
-            }
-        }
-        .navBox{
-            @include dpFlex(space-between);
-            li{
-                ul{
-                    li{cursor: pointer;}
-                }
-            }
-        }
-        .custom{}
-        .ftrBot{
-            width: 100%;
-            @include dpFlex(space-between);
-            .texts{}
-            .sns{}
         }
     }
 }
