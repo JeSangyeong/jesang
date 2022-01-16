@@ -103,6 +103,7 @@ div.ftrWrap{
     footer{
         @include ctWidth;
         @include dpFlex(space-between);
+        flex-wrap: wrap;
         padding: 30px 0;
         .logoBox{
             .tmi{
@@ -125,6 +126,10 @@ div.ftrWrap{
         }
         .custom{}
         .ftrBot{
+            width: 100%;
+            @include dpFlex(space-between);
+            .texts{}
+            .sns{}
         }
     }
 }
