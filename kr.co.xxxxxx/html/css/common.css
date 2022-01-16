@@ -406,6 +406,7 @@ div.ftrWrap footer .ftrBot .sns li {
   }
   div.ftrWrap footer {
     display: block;
+    width: 95%;
   }
   div.ftrWrap footer .logoBox {
     width: 100%;
