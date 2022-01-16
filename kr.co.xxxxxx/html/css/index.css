@@ -296,23 +296,29 @@ div.menu section .artView .artGroup article .image img {
   top: 0;
 }
 
-div.review header .texts .btn {
+div.slideMenu {
+  background-color: #eee;
+  height: 500px;
+}
+
+div.slideMenu header .texts .btn {
   margin-top: 40px;
 }
 
-div.review header .texts .btn button {
+div.slideMenu header .texts .btn button {
   width: 240px;
   height: 50px;
   border-radius: 25px;
+  background-color: #999;
 }
 
-div.review header .imgView {
-  width: 50%;
-  margin-left: 50%;
-  margin-top: -160px;
+div.slideMenu header .imgView {
+  width: 60%;
+  margin-left: 45%;
+  margin-top: -220px;
 }
 
-div.review header .imgView .imgGroup {
+div.slideMenu header .imgView .imgGroup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,9 +328,9 @@ div.review header .imgView .imgGroup {
   width: 500%;
 }
 
-div.review header .imgView .imgGroup .image {
+div.slideMenu header .imgView .imgGroup .image {
   width: calc(100% / 6 - 30px);
   height: 0;
-  padding-top: calc(100% / 9 * 1);
+  padding-top: calc(100% / 8 * 1);
   background-color: #ccc;
 }

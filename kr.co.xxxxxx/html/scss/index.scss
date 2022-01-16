@@ -261,7 +261,9 @@ div.menu{
     }
 }
 
-div.review{
+div.slideMenu{
+    background-color: #eee;
+    height: 500px;
     header{
         .texts{
             .btn{
@@ -270,13 +272,14 @@ div.review{
                     width: 240px;
                     height: 50px;
                     border-radius: 25px;
+                    background-color: #999;
                 }
             }
         }
         .imgView{
-            width: 50%;
-            margin-left: 50%;
-            margin-top: -160px;
+            width: 60%;
+            margin-left: 45%;
+            margin-top: -220px;
             .imgGroup{
                 display: flex;
                 justify-content: space-between;
@@ -284,9 +287,19 @@ div.review{
                 .image{
                     width: calc(100% / 6 - 30px);
                     height: 0;
-                    padding-top: calc(100% / 9 * 1);
+                    padding-top: calc(100% / 8 * 1);
                     background-color: #ccc;
                 }
+            }
+        }
+    }
+}
+
+div.review{
+    .artView{
+        .artGroup{
+            article{
+                
             }
         }
     }
