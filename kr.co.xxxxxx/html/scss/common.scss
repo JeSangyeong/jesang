@@ -219,20 +219,98 @@ div.ftrWrap{
             @include dpFlex(space-between);
             align-items: center;
             .texts{
-                @include dpFlex(space-between);
+                @include dpFlex(flex-start);
                 li{
                     @include ctFonts(500, 14px, 20px, #555);
                     margin-right: 20px;
                 }
             }
             .sns{
-                @include dpFlex(space-between);
+                @include dpFlex(flex-start);
                 padding-right: 155px;
                 li{
                     background-image: url('../img/icon_c.svg');
-                    width: 30px;
-                    height: 30px;
-                    margin: 0 10px;
+                    width: 25px;
+                    height: 25px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+//모바일footer
+@media(max-width:1290px){
+    div.ftrWrap{
+        position: relative;
+        padding: 30px 0 20px 0;
+        footer{
+            display: block;
+            .logoBox{
+                width: 100%;
+                h1{@include ctFonts(500, 32px, 30px, #000);}
+                .tmi{
+                    li{
+                        @include ctFonts(500, 12px, 23px, #000);
+                        &:last-of-type{
+                            position: absolute;
+                            bottom: 95px;
+                        }
+                    }
+                }
+            }
+            .navBox{
+                display: none;
+            }
+            .custom{
+                width: 100%;
+                padding: 15px 0;
+                margin: 15px 0;
+                border-top: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+                h5{
+                    @include ctFonts(500, 16px, 23px, #000);
+                    position: relative;
+                    cursor: pointer;
+                    &::after{
+                        content: '';
+                        width: 15px; height: 2px;
+                        transform: rotate(90deg);
+                        background-color: #000;
+                        position: absolute;
+                        margin: auto;
+                        top: 0; bottom: 0;
+                        right: 0;
+                    }
+                    &::before{
+                        content: '';
+                        width: 15px; height: 2px;
+                        background-color: #000;
+                        position: absolute;
+                        margin: auto;
+                        top: 0; bottom: 0;
+                        right: 0;
+                    }
+                }
+                .texts{
+                    h4{@include ctFonts(500, 26px, 45px, #000);}
+                    p{@include ctFonts(500, 14px, 23px, #000);}
+                }
+                .btn{
+                    margin-top: 20px;
+                }
+            }
+            .ftrBot{
+                display: block;
+                .texts{
+                    li{
+                        @include ctFonts(500, 13px, 40px, #555);
+                        margin-right: 40px;
+                    }
+                }
+                .sns{
+                    padding: 80px 0 20px 0;
+                    li{margin-right:22px;}
                 }
             }
         }
