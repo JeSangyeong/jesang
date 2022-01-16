@@ -11,34 +11,34 @@ div.mnBanner header h6 {
   margin-top: 50px;
 }
 
-div.toggle {
+div.tabMenu {
   margin-top: -50px;
 }
 
-div.toggle .btns {
+div.tabMenu .btns {
   text-align: center;
 }
 
-div.toggle .btns button {
+div.tabMenu .btns button {
   width: calc(100% / 6);
   height: 50px;
   margin-left: -5px;
   outline: 1px solid #000;
 }
 
-div.toggle .btns .b1 {
+div.tabMenu .btns .b1 {
   background-color: cornsilk;
 }
 
-div.toggle .btns .b2 {
+div.tabMenu .btns .b2 {
   background-color: burlywood;
 }
 
-div.toggle .btns .b3 {
+div.tabMenu .btns .b3 {
   background-color: blanchedalmond;
 }
 
-div.toggle .btns .b4 {
+div.tabMenu .btns .b4 {
   background-color: beige;
 }
 
