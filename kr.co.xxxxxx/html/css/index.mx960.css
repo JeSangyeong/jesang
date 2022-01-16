@@ -36,4 +36,43 @@ div.menu section .artView {
 
 div.menu section .artView .artGroup {
   width: 350%;
+  margin-left: 15%;
+}
+
+div.slideReview .slideMenu {
+  padding-bottom: 450px;
+}
+
+div.slideReview .slideMenu header {
+  text-align: center;
+}
+
+div.slideReview .slideMenu header .imgView {
+  width: 55%;
+  margin: 80px 0 0 0;
+}
+
+div.slideReview .slideMenu header .imgView .imgGroup {
+  width: 600%;
+}
+
+div.slideReview .slideMenu header .imgView .imgGroup .image {
+  width: calc(100% / 6 - 15px);
+  padding-top: calc(100% / 9 * 1);
+}
+
+div.slideReview .review {
+  padding-top: 200px;
+}
+
+div.slideReview .review .artView .artGroup article .image {
+  width: 40%;
+  padding-top: calc(100% / 15 * 1);
+}
+
+div.slideReview .review .artView .navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
 }

@@ -36,6 +36,45 @@ div.menu{
             overflow: inherit;
             .artGroup{
                 width: 350%;
+                margin-left: 15%;
+            }
+        }
+    }
+}
+
+div.slideReview{
+    .slideMenu{
+        padding-bottom: 450px;
+        header{
+            text-align: center;
+
+            .imgView{
+                width: 55%;
+                margin: 80px 0 0 0;
+                .imgGroup{
+                    width: 600%;
+                    .image{
+                        width: calc(100% / 6 - 15px);
+                        padding-top: calc(100% / 9 * 1);
+                    }
+                }
+            }
+        }
+    }
+    .review{
+        padding-top: 200px;
+        .artView{
+            .artGroup{
+                article{
+                    .image{
+                        width: 40%;
+                        padding-top: calc(100% / 15 * 1);
+                    }
+                }
+            }
+            .navi{
+                display: flex;
+                margin-top: 40px;
             }
         }
     }
