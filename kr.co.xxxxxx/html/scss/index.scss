@@ -66,47 +66,6 @@ div.topMenu {
     }
 }
 
-div.hdrWrap {
-    padding: 40px 0;
-    position: fixed;
-    width: 100%;
-    top: 30px;
-    z-index: 1;
-
-    header {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-
-        h1 {
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: calc(100% / 12 * 3);
-            text-align: center;
-            height: 80px;
-        }
-
-        .navWrap {
-            width: calc(100% / 12 * 3 + 40px);
-            display: flex;
-            justify-content: space-between;
-
-            li {
-                a {}
-            }
-        }
-
-        .icons {
-            width: calc(100% / 12 * 4 - 40px);
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-}
 
 div.mnBannerView {
     position: relative;
